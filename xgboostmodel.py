@@ -20,8 +20,7 @@ import GetData
 
 class BuildFeature(object):
     def __init__(self, ):
-        #ts.set_token("d37e1279d92ac6d0470c5a14eb4dd227e4dfbaa8261e66ce2af19684")
-        #self.pro = ts.pro_api()
+
        
         self.tool=tools()
     
@@ -165,14 +164,7 @@ class BuildFeature(object):
         
         return feature
         
-    def getallstock(self):
 
-        allstock = self.pro.query('stock_basic', exchange='', list_status='L',
-                                  fields='ts_code,symbol,name,area,industry,list_date')
-        allstock = allstock[~allstock.name.str.contains('ST')]
-        # 重新索引
-        allstock = allstock.reset_index(drop=True)
-        return allstock
     
     def run(self,days=[3,5]):#注意：days列表里必须至少有一项，且不为0
         
