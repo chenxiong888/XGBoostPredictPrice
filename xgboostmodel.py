@@ -20,8 +20,8 @@ import GetData
 
 class BuildFeature(object):
     def __init__(self, ):
-        ts.set_token("d37e1279d92ac6d0470c5a14eb4dd227e4dfbaa8261e66ce2af19684")
-        self.pro = ts.pro_api()
+        #ts.set_token("d37e1279d92ac6d0470c5a14eb4dd227e4dfbaa8261e66ce2af19684")
+        #self.pro = ts.pro_api()
        
         self.tool=tools()
     
